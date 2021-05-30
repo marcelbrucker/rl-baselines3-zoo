@@ -96,6 +96,8 @@ HalfCheetahBulletEnv-v0:
   learning_starts: 10000
   replay_buffer_kwargs: "dict(handle_timeout_termination=True)"
   use_sde: True
+  munchausen_scaling: 0.9
+  munchausen_clipping_low: -1
   policy_kwargs: "dict(log_std_init=-3, net_arch=[400, 300])"
 
 # Tuned
