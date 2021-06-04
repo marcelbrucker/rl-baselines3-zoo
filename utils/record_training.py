@@ -119,7 +119,7 @@ if __name__ == "__main__":  # noqa: C901
         match = re.search(r"^(\w+)-(\w+)-(\w+)-(\w+)-(\w+)", filename)
         text = ""
         if match is not None:
-            text = f"{match.group(4)}{match.group(5)}"
+            text = f"{match.group(4)}-{match.group(5)}"
 
         return text
 
