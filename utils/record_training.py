@@ -116,10 +116,10 @@ if __name__ == "__main__":  # noqa: C901
 
     # the text displayed will be the first two words of the file
     def get_text_from_video_filename(filename: str) -> str:
-        match = re.search(r"^(\w+)-(\w+)-(\w+)-(\w+)", filename)
+        match = re.search(r"^(\w+)-(\w+)-(\w+)-(\w+)-(\w+)", filename)
         text = ""
         if match is not None:
-            text = f"{match.group(3)} {match.group(4)}"
+            text = f"{match.group(4)}{match.group(5)}"
 
         return text
 
