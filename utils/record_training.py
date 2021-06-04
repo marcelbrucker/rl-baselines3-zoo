@@ -119,7 +119,7 @@ if __name__ == "__main__":  # noqa: C901
         match = re.search(r"^(\w+)-(\w+)", filename)
         text = ""
         if match is not None:
-            text = f"{match.group(1)} {match.group(2)}"
+            text = f"{match.group(3)} {match.group(4)}"
 
         return text
 
@@ -136,6 +136,7 @@ if __name__ == "__main__":  # noqa: C901
             f"text='{episode_videos_names[i]}': fontcolor=white: fontsize=24: box=1: boxcolor=black@0.5:"
             f'boxborderw=5: x=(w-text_w)/2: y=12" -codec:a copy {tmp_videos_path[i]} -y -hide_banner -loglevel error'
         )
+        print("Running: " + ffmpeg_command_to_add_text)
         os.system(ffmpeg_command_to_add_text)
 
     # join videos together and convert to gif if needed
