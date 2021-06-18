@@ -98,6 +98,8 @@ HalfCheetahBulletEnv-v0:
   use_sde: True
   munchausen_scaling: 0.9
   munchausen_clipping_low: -1
+  munchausen_clipping_high: 0
+  munchausen_mode: 'default'
   policy_kwargs: "dict(log_std_init=-3, net_arch=[400, 300])"
 
 # Tuned
@@ -116,6 +118,8 @@ AntBulletEnv-v0:
   use_sde: True
   munchausen_scaling: 0.9
   munchausen_clipping_low: -1
+  munchausen_clipping_high: 0
+  munchausen_mode: 'default'
   policy_kwargs: "dict(log_std_init=-3, net_arch=[400, 300])"
 
 HopperBulletEnv-v0:
@@ -133,6 +137,8 @@ HopperBulletEnv-v0:
   use_sde: True
   munchausen_scaling: 0.9
   munchausen_clipping_low: -1
+  munchausen_clipping_high: 0
+  munchausen_mode: 'default'
   policy_kwargs: "dict(log_std_init=-3, net_arch=[400, 300])"
 
 Walker2DBulletEnv-v0:
@@ -150,6 +156,8 @@ Walker2DBulletEnv-v0:
   use_sde: True
   munchausen_scaling: 0.9
   munchausen_clipping_low: -1
+  munchausen_clipping_high: 0
+  munchausen_mode: 'default'
   policy_kwargs: "dict(log_std_init=-3, net_arch=[400, 300])"
 
 
